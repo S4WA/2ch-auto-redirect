@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "2ch auto redirect",
+	"description": "オートリダイレクト",
+	"version": "1.0",
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [
+			"2ch.js"
+		],
+		"matches": [ "*://jump.5ch.net/*", "*://2ch.io/*" ],
+		"run_at": "document_end"
+	} ]
+}
